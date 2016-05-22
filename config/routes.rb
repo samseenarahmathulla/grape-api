@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  mount Converter::Currency => '/api'
+  mount Converter::Currency => '/api' #access method currency from converter module.
+
+  mount Finder::Weather => '/finderapi'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
